@@ -19,7 +19,7 @@ jobs:
 
     deploy:
         needs: build
-        runs-on: [abri]
+        runs-on: [aws-ec2]
         steps:
           - name: Pull image from DockerHub
             run: docker pull image buamtech/nodejs-app:latest 
